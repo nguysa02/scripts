@@ -22,7 +22,7 @@ def compare_detail(file_path1: str, file_path2: str):
         line1 = f1str[i].strip(os.linesep) if i < len(f1str) else ""
         line2 = f2str[i].strip(os.linesep) if i < len(f2str) else ""
         if line1 != line2:
-            print(f"{i} || {line1} || {line2}")
+            print(f"{i+1} || {line1} || {line2}")
 
 
 def main():
